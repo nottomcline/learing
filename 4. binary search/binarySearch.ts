@@ -14,7 +14,6 @@ function binarySearchIterative(arr: number[], x: number) {
       low = mid + 1;
     }
   }
-
   return -1;
 }
 
@@ -38,3 +37,21 @@ function binarySearchRecursive(
 
   return -1;
 }
+
+// some test data
+const sortedArray = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+const target = 70;
+
+// function calls
+console.log("Starting Iterative Search...");
+const iterativeResult = binarySearchIterative(sortedArray, target);
+console.log(`Found at index: ${iterativeResult}`);
+
+console.log("Starting Recursive Search...");
+const recursiveResult = binarySearchRecursive(
+  sortedArray,
+  0,
+  sortedArray.length - 1,
+  target,
+);
+console.log(`Found at index: ${recursiveResult}`);
