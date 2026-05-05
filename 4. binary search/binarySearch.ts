@@ -3,7 +3,7 @@ function binarySearchIterative(arr: number[], x: number) {
   let high = arr.length - 1;
 
   while (high >= low) {
-    const mid = low + Math.floor((high - low) / 2);
+    const mid = low + Math.floor((high - low) / 2); // add low so the midpoint is computed relative to the current search interval
 
     if (arr[mid] === x) return mid;
 
@@ -23,7 +23,7 @@ function binarySearchRecursive(
   x: number,
 ) {
   if (high <= low) {
-    const mid = low + Math.floor((high - low) / 2);
+    const mid = low + Math.floor((high - low) / 2); // add low so the midpoint is computed relative to the current search interval
 
     if (arr[mid] === x) return mid;
 
