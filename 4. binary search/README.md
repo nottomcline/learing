@@ -1,5 +1,6 @@
 Binary Search:
 - "Binary" means separating something in two (splittin array in half -> searching in the "left"-/ "right"-area)
+- Is an algorithm defined by a fixed procedure -> repeatedly divide a sorted array and compare the middle element
 - Each guess will "eliminate" half of the remaining options
 - Binary Search only for sorted Data
 - Instead of scanning the Array from start to finish O(n) time (Linear Search)
