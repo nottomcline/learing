@@ -1,0 +1,15 @@
+Big O notation:
+- Describes how the time (runtime) or space (memory usage) complexity of an algorithm grows as input size `n` increases
+- "O" = growth rate of runtime (or space)
+- "n" = amount of data
+- Examples:
+  - O(1) -> constant time
+  - O(log n) -> logarithmic time
+  - O(n) -> linear time
+  - O(n^2) -> quadratic time
+  - O(2^n) -> exponential time
+- Constant: If the algorithm runs for the same amount of time every time irrespective of the input size. It is said to exhibit constant time complexity.
+- Logarithmic: When the algorithm runtime increases very slowly compared to an increase in input size i.e. logarithm of input size then the algorithm is said to exhibit logarithmic time complexity.
+- Linear: If the algorithm runtime is linearly proportional to the input size then the algorithm is said to exhibit linear time complexity.
+- Exponential: If the algorithm runtime depends on the input value raised to an exponent then it is said to exhibit exponential time complexity.
+- source: https://www.geeksforgeeks.org/dsa/what-is-logarithmic-time-complexity/#how-to-measure-complexities
