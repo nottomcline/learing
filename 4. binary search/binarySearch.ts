@@ -14,6 +14,8 @@ function binarySearchIterative(arr: number[], x: number) {
       low = mid + 1;
     }
   }
+
+  return -1;
 }
 
 function binarySearchRecursive(
@@ -33,4 +35,6 @@ function binarySearchRecursive(
       return binarySearchRecursive(arr, mid + 1, high, x);
     }
   }
+
+  return -1;
 }
