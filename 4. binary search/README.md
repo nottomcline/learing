@@ -7,3 +7,4 @@ Binary Search:
 - It can be implemented in the following two ways:
   - Iterative -> more real world
   - Recursive -> short (fit better for coding interviews)
+- source: https://www.geeksforgeeks.org/dsa/binary-search/
