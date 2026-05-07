@@ -1,3 +1,12 @@
+function binarySearch_native(arr: number[], x: number) {
+  for (let i = 0; i <= arr.length - 1; i++) {
+    if (arr[i] === x) {
+      return i;
+    }
+  }
+  return -1;
+}
+
 function binarySearchIterative(arr: number[], x: number) {
   let low = 0;
   let high = arr.length - 1;
@@ -42,6 +51,10 @@ const sortedArray = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 const target = 70;
 
 // function calls
+console.log("Starting Native Search...");
+const nativeResult = binarySearch_native(sortedArray, target);
+console.log(`Found at index: ${nativeResult}`);
+
 console.log("Starting Iterative Search...");
 const iterativeResult = binarySearchIterative(sortedArray, target);
 console.log(`Found at index: ${iterativeResult}`);
