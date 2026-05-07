@@ -15,8 +15,8 @@ Sliding Window:
   - Instead of recalculating each window sum from scratch, the Sliding Window technique:
     1. Compute the sum of the first window once
     2. Slide the window forward by:
-      - subtracting the element leaving the window (trailing element)
       - adding the new element entering the window (leading element)
+      - subtracting the element leaving the window (trailing element)
     - This allows to iterate trough the array only once
     - Example:
       - Array = [1, 2, 6, 2, 4, 1], k = 3"
