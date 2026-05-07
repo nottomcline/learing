@@ -22,7 +22,7 @@ function binarySearchRecursive(
   high: number,
   x: number,
 ) {
-  if (high <= low) {
+  if (high >= low) {
     const mid = low + Math.floor((high - low) / 2); // add low so the midpoint is computed relative to the current search interval
 
     if (arr[mid] === x) return mid;
