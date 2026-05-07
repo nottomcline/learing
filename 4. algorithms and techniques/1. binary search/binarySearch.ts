@@ -7,7 +7,7 @@ function binarySearch_native(arr: number[], x: number) {
   return -1;
 }
 
-function binarySearchIterative(arr: number[], x: number) {
+function binarySearch_iterative(arr: number[], x: number) {
   let low = 0;
   let high = arr.length - 1;
 
@@ -25,7 +25,7 @@ function binarySearchIterative(arr: number[], x: number) {
   return -1;
 }
 
-function binarySearchRecursive(
+function binarySearch_recursive(
   arr: number[],
   low: number,
   high: number,
@@ -37,9 +37,9 @@ function binarySearchRecursive(
     if (arr[mid] === x) return mid;
 
     if (arr[mid] > x) {
-      return binarySearchRecursive(arr, low, mid - 1, x);
+      return binarySearch_recursive(arr, low, mid - 1, x);
     } else {
-      return binarySearchRecursive(arr, mid + 1, high, x);
+      return binarySearch_recursive(arr, mid + 1, high, x);
     }
   }
 
@@ -56,11 +56,11 @@ const nativeResult = binarySearch_native(sortedArray, target);
 console.log(`Found at index: ${nativeResult}`);
 
 console.log("Starting Iterative Search...");
-const iterativeResult = binarySearchIterative(sortedArray, target);
+const iterativeResult = binarySearch_iterative(sortedArray, target);
 console.log(`Found at index: ${iterativeResult}`);
 
 console.log("Starting Recursive Search...");
-const recursiveResult = binarySearchRecursive(
+const recursiveResult = binarySearch_recursive(
   sortedArray,
   0,
   sortedArray.length - 1,
