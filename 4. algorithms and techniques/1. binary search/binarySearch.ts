@@ -1,5 +1,5 @@
 function binarySearch_native(arr: number[], x: number) {
-  for (let i = 0; i <= arr.length - 1; i++) {
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i] === x) {
       return i;
     }
