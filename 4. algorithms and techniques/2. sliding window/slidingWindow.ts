@@ -26,7 +26,9 @@ function maxSubarraySumSizeK_slidingWindow(arr: number[], k: number) {
   // Slide the window from start to end of the array
   // i = k because we already got the first window calculated
   for (let i = k; i < arr.length; i++) {
-    windowSum += arr[i] - arr[i - k];
+    // arr[i]; new leading element
+    // arr[i - k]; old trailing element
+    windowSum += arr[i] - arr[i - k]; // new windowSum = old windowSum + new leading element - old trailing element
     maxSum = Math.max(maxSum, windowSum);
   }
 
